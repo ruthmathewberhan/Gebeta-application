@@ -1,0 +1,193 @@
+.r-home {
+    height: 65vh;
+    width: 100%;
+}
+
+.r-img-container {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Centered text */
+.r-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.search_btn {
+    border-radius: 10px;
+    background-color: saddlebrown;
+    height: 45px;
+    color: white;
+    font-size: 16px;
+}
+
+.search_box {
+    border-radius: 10px;
+    height: 45px;
+    width: 270px;
+}
+
+.r-centered1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#new {
+    font-size: 40px;
+    color: white;
+}
+
+#policeprofileachievement [type="text"] {
+    position: absolute;
+    margin-top: 30px;
+    width: 10px;
+    height: 5px;
+}
+
+.titles {
+    color: rgb(43, 43, 43);
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+}
+
+.r-card-img {
+    height: 40vh;
+    position: relative;
+}
+
+.img-text {
+    position: absolute;
+    color: white;
+    background-color: rgba(26, 25, 25, 0.596);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.veg {
+    top: 87.2%;
+    left: 0%;
+    padding: 0.15% 12%;
+    width: 100%;
+}
+
+.non-veg {
+    top: 87.2%;
+    left: 0%;
+    padding: 0% 12%;
+    width: 100%;
+}
+
+.b-fast {
+    top: 87.2%;
+    left: 0;
+    padding: 0% 12%;
+    width: 100%;
+}
+
+.f-food {
+    top: 87%;
+    left: 0%;
+    padding: 0.15% 9.5%;
+    width: 100%;
+}
+
+.alcoholic {
+    top: 87%;
+    left: 0%;
+    padding: 0.15% 9.6%;
+    width: 100%;
+}
+
+.n-alcoholic {
+    top: 87%;
+    left: 0%;
+    padding: 0.15% 8.3%;
+    width: 100%;
+}
+
+.food-imgs {
+    width: 25rem;
+}
+
+.r-mr {
+    margin-right: 6%;
+}
+
+.img-links:hover {
+    background: rgb(107, 105, 105);
+}
+
+@media screen and (max-width: 768px) {
+    .veg {
+        top: 110.8%;
+        left: 9%;
+        padding: 0.15% 18%;
+    }
+
+    .non-veg {
+        top: 151%;
+        left: 9%;
+        padding: 0.15% 14%;
+    }
+
+    .b-fast {
+        top: 191%;
+        left: 10%;
+        padding: 0.15% 20%;
+    }
+
+    .lunch {
+        top: 238.9%;
+        left: 9%;
+        padding: 0.15% 23%;
+    }
+
+    .dinner {
+        top: 278.9%;
+        left: 9%;
+        padding: 0.15% 22.7%;
+    }
+
+    .f-food {
+        top: 319.1%;
+        left: 9%;
+        padding: 0.15% 20%;
+    }
+
+    .alcoholic {
+        top: 372.6%;
+        left: 9%;
+        padding: 0.15% 20%;
+    }
+
+    .n-alcoholic {
+        top: 412.8%;
+        left: 9%;
+        padding: 0.15% 17%;
+    }
+}
+
+.title-link {
+    font-size: 30px;
+    color: saddlebrown;
+    margin: 0 auto;
+}
+
+.search-res {
+    font-size: 30px;
+    color:brown;
+}
+
+.title-link:hover {
+    color:chocolate;
+}

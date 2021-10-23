@@ -1,0 +1,118 @@
+/* body */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: white;
+    background-size: 100%;
+    height: 100%;
+}
+
+/* navigaion */
+
+.navit a:hover{
+    text-decoration: none;
+    color: rgb(240, 180, 111);
+}
+
+.navit a:active{
+    text-decoration: none;
+    color: rgb(242, 245, 102);
+}
+
+/* footer */
+
+.footer-links {
+    color: black;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer h2{
+    color:  red;
+}
+
+.footer h4{
+    color:  burlywood;
+}
+
+.footer p {
+    font-size: 18px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+#parah {
+    font-size: 14px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.footer i {
+    color:  brown;
+}
+
+.img-sml {
+    width: 100px;
+}
+
+.footerGap{
+    margin-top: 45%;
+    
+}
+
+.brand{
+    color: red !important;
+}
+
+.gebeta {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.icons {
+    font-size: 20px;
+    color: orangered;
+}
+
+.follow {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sign a {
+    font-size: 16px;
+    color: rgb(214, 228, 153);
+    text-decoration: underline;
+}
+
+.footer {
+    margin-bottom: 0;
+}
+
+.rec-link {
+    text-decoration: underline !important;
+    font-weight: bold;
+    color: brown!important;
+    font-size: 16px;
+}
+
+.sign-nav {
+    font-weight: bold;
+    font-size: 18px;
+    color: lightslategray;
+}
+
+.mar-l {
+    padding-left: 155%;
+}
+
+.myFavImg {
+    width: 90%;
+    height: 400px;
+}

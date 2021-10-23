@@ -1,0 +1,55 @@
+.new{
+    width: 300px;
+}
+
+.card-img {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 10px;
+    
+  }
+  .card-body{
+      background-color: wheat;
+  }
+  #btn{
+      background-color: black;
+      color: white;
+      margin-top: 50px;
+  }
+  .head{
+      margin:50px;
+  }
+  .new-row{
+      margin-right: 10px;
+      margin-bottom:70px;
+  }
+ 
+  .average{
+    width:auto;
+    height: auto;
+    border: 1px solid #BFBFBF;
+    box-sizing: border-box;
+    margin: px;
+    padding: 2px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+  }
+.average1 {
+    margin: 5px;
+}
+#category {
+    margin-left: 450px;
+    color: black;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+
+.btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited {
+    background-color: #8064A2 !important;
+}
+
+.search_cat {
+    font-size: 30px;
+    color: firebrick;
+}

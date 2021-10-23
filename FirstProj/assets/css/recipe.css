@@ -1,0 +1,116 @@
+.title-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title-box {
+    width: 70%;
+    border: solid 2px rgb(138, 25, 17);
+    border-radius: 5px;
+}
+
+.rec-desc {
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(180, 27, 16);
+    text-transform: uppercase;
+}
+
+.title-addons {
+    font-family: 'Rubik', sans-serif;
+    color:rgb(180, 27, 16);
+    text-transform: uppercase;
+}
+
+.revs {
+    font-size: 40px;
+}
+
+.recipe-imgs {
+    width: 50%;
+    left: 25%;
+    top: 40%;
+    border-radius: 5px;
+    border: rgb(235, 235, 235) 2px solid;
+    position: absolute;
+}
+
+.overview {
+    width: 80%;
+    margin-top: 48%;
+    margin-left: 10%;
+    font-family: 'Source Serif Pro', serif;
+    text-align: justify;
+    color: rgb(48, 48, 48);
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.recipe-box {
+    width: 80%;
+    margin-left: 10%;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 5px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.bold-hr {
+    border-bottom: 3px rgb(68, 68, 68) solid;
+}
+
+.h3 {
+    text-transform: uppercase;
+}
+
+.rev-text {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+    text-align: justify;
+}
+
+.username{
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(211, 25, 12);
+    text-transform: uppercase;
+}
+ 
+.rev-stars{
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(211, 25, 12);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ingdts {
+    line-height: 1.8;
+}
+
+.prep {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+li::marker {
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.reviews {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.iframe {
+    width: 95%;
+    height: 70vh;
+}
+

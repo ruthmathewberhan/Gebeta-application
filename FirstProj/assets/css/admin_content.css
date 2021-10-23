@@ -1,0 +1,318 @@
+/* dashboard-content */
+
+.cardBox{
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    
+
+}
+
+.cardBox .card{
+    position: relative;
+    background-color: rgb(255, 246, 235);
+    padding: 20px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+
+.cardBox .card .numbers{
+    position: relative;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.cardBox .card .cardName{
+    color: #999;
+}
+
+.cardBox .card .iconBox{
+    font-size: 3em;
+    color: rgb(109, 21, 21);
+}
+
+.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.details .newRecpies{
+    position: relative;
+    /* display: grid; */
+    margin-top: 0;
+    min-height: 380px;
+    padding: 20px;
+    background-color: rgb(255, 246, 235);
+    width:100%;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start ;
+
+}
+
+.cardHeader h2{
+    font-weight: 600;
+}
+
+.bttn{
+    position: relative;
+    padding: 5px 10px;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.details table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+
+.details table thead td{
+    font-weight: 600;
+    padding: 15px ;
+}
+
+.details .newRecpies table tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+    margin-top: 8px;
+}
+
+.details .newRecpies table tbody tr:last-child{
+    border-bottom: none;
+}
+
+.details .newRecpies table tbody tr:hover{
+    background: gray;
+}
+
+.details .newRecpies table tbody tr td{
+    padding: 15px 15px;
+    margin-top: 4px;
+}
+
+.details .newRecpies table thead tr td:last-child,
+.details .newRecpies table tbody tr td:last-child{
+    align-items: right;
+}
+
+.details .newRecpies table thead tr td:nth-child(2),
+.details .newRecpies table tbody tr td:nth-child(2){
+    align-items: right;
+    padding: 20px;
+}
+.details .newRecpies table thead tr td:nth-child(3),
+.details .newRecpies table tbody tr td:nth-child(3){
+    align-items: center;
+}
+
+/*.details  .newChiefs{
+    position: relative;
+    display: grid;
+    margin-top: 0;
+    min-height: 380px;
+    padding: 20px;
+    background-color: rgb(255, 246, 235);
+}
+
+.details  .newChiefs .imgBx{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.details  .newChiefs .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details  .newChiefs table tr:hover,
+.details  .newChiefs table tr:hover td h4 span{
+    background-color: grey;
+}
+
+.details  .newChiefs table tr td{
+    padding: 7px 10px;
+}
+
+.details  .newChiefs table tr td h4{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2em;
+    
+}
+
+.details  .newChiefs table tr td h4 span{
+    color: #999;
+    
+}
+    */
+
+/* responsiveness */
+
+@media (max-width: 992px){
+    .navigation{
+        left: -250px;
+    }
+    .navigation.active{
+        left:0px;
+        width:250px;
+        visibility: visible;
+    }
+
+    .main{
+        width:100%;
+        left:0;
+    }
+
+    .main.active{
+        width: calc(100% - 250px);
+        left: 250px;
+
+    }
+
+    .cardBox{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+}
+
+@media(max-width: 768px){
+    .details{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .cardHeader h2{
+        font-weight: 600;
+        font-size: 18px;
+
+    }
+
+    
+}
+
+@media(max-width: 480px){
+    .cardBox{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .details .newRecpies {
+        overflow-x: auto;
+    }
+
+    .details .newRecpies table{
+        width: 600px;
+
+    }
+
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+
+    .navigation.active{
+        width: 100%;
+        left: 0;
+    }
+
+    .toggle .active{
+        position: fixed;
+        z-index: 1000;
+        right: 0;
+        left: initial;
+    }
+
+    .toggle .active::before{
+        color: brown;
+    }
+
+    .main,
+    .main.active{
+        width: 100%;
+        left: 0;
+    }
+
+}
+
+/* new Recepie css*/
+
+.container {
+    border: 1px gray solid;
+    width: 75%;
+    padding: 20px;
+}
+
+.inputs {
+    width: 85%;
+    margin-left: 45px;
+}
+
+.formBox {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin-left: 45px;
+}
+
+select {
+    width: 62%
+}
+
+#servings-times, #servings-times3, #servings-times5 {
+    width: 60%;
+    text-align: left;
+}
+
+#servings-times2, #servings-times4 {
+    width: 60%;
+    text-align: right;
+}
+
+hr {
+    height: 3px;
+    background-color: #ccc;
+    border: none;
+    margin-top: 6%;
+}
+
+button {
+    color: rgb(37, 216, 240);
+    border: 1px solid rgb(37, 216, 240);
+}
+
+.btn{
+    text-decoration: none;
+}
+
+/* display css*/
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+/* new Recpie-content */
+
+.content {
+    position: relative;
+    padding: 5%;
+    margin: 5% 10%;
+    width: 80%;
+    align-self: center;
+    display: grid;
+    /* grid-gap: 20px; */
+    /*top: 48px;
+    left: -65px;*/
+    border: grey solid 1px;
+}
+
+hr {
+    height: 3px;
+    background-color: #ccc;
+    border: none;
+    margin-top: 6%;
+}
+
+.border{
+    border: grey solid 1px;
+}
+
+.rowspace{
+    margin: 10px;
+}
+
+.clo{
+    align-content: center;
+    margin-left: 150px;
+}
+
+.btn{
+    width: fit-content;
+    background-color: rgb(0, 204, 255);
+    color: white;
+    padding: 5px 20px;
+}
+
+.card{
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+}

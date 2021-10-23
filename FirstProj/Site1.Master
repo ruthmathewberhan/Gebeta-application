@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FirstProj.Site1"  %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootsrap 4 css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Master css -->
+    <link rel="stylesheet" href="./assets/css/master.css">
+
+    <!-- style-sidebar css -->
+    <link rel="stylesheet" href="./assets/css/style_sidebar.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6454e424b1.js" crossorigin="anonymous"></script>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/svg" href="assets/images/favicon.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+			
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+		<div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav-custom">
+          
+        <div class="container-fluid">
+            &nbsp; <asp:LinkButton CssClass="ml-3 rec-link" ID="recipebtn" runat="server" Visible="False" OnClick="recipebtn_Click">Your Recipes</asp:LinkButton>
+
+          <a style="margin:0 auto; font-size:25px;" class="brand navbar-brand pl-5 font-weight-bold" href="index.aspx">Gebeta</a>
+          
+          <asp:LinkButton CssClass="mr-2 sign-nav" ID="signUpbtn" runat="server" OnClick="signUpbtn_Click">SignUp | </asp:LinkButton>
+          
+          <asp:LinkButton CssClass="sign-nav ml-1 mr-2" ID="signInbtn" runat="server" OnClick="signInbtn_Click">Login  </asp:LinkButton>
+           
+          <asp:LinkButton CssClass="sign-nav ml-1 mr-2" ID="logoutbtn" runat="server" OnClick="logoutbtn_Click" Visible="False">Logout | </asp:LinkButton>
+          
+          <asp:LinkButton CssClass="sign-nav ml-1" ID="userbtn" runat="server" Visible="False">Hello User</asp:LinkButton>
+          
+        </div>
+          
+      </nav>
+    </div>
+
+    <div class="">
+      <div style="position: absolute; height:100vh; top: -2%; z-index: 1;" id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+              </button>
+            </div>
+  
+        <div class="p-4"></div>
+        <h1><a href="index.aspx" class="logo">Gebeta <span>logo</span></a></h1>
+        
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+          <a href="index.aspx"><span class="fa fa-home mr-3"></span> Home</a>
+          </li>
+          <li>
+            <a href="category.aspx"><span class="fa fa-user mr-3"></span> Foods</a>
+          </li>
+          <li>
+          <a href="categoryDrinks.aspx"><span class="fa fa-briefcase mr-3"></span> Drinks</a>
+          </li>
+          
+          
+        </ul>
+          <p class="mt-4 ml-4 follow">Follow Gebeta</p>
+          <p class="pl-5">
+             <a class="mr-2" href="#"><i class="fab fa-instagram icons rounded-circle"></i></a>
+             <a class="mr-2" href="#"><i class="fab fa-facebook mr-2 icons rounded-circle"></i></a>
+             <a class="mr-2" href="#"><i class="fab fa-linkedin mr-2 icons rounded-circle"></i></a> 
+          </p>
+          <p class="pl-3 pt-3 ml-1 sign">
+              <a href="register.aspx">SignUp</a> /
+              <a href="signIn.aspx">Login</a>
+          </p>
+      </div>
+    </div>
+
+        <!-- Main Content Placeholder -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <!-- footer -->
+        <div style="margin-top:20%;" class="pt-5 footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-xs-12 about-company">
+                    <h2>Gebeta</h2>
+                    <p class="pr-5 " id="parah">Place where you can get the recipies of delcious Ethiopian cuzine.</p>
+              </div>
+              <div class="col-lg-3 col-xs-12">
+                    <h4 class="mt-lg-0 mt-sm-3">Follow Us</h4>
+                    <p class="pt-2">
+                           <a href="#"><i class="fab fa-instagram icons rounded-circle"></i></a>
+                            <a href="#"><i class="fab fa-facebook mr-2 icons rounded-circle"></i></a>
+                            <a href="#"><i class="fab fa-linkedin mr-2 icons rounded-circle"></i></a> 
+                    </p>
+                    <p class=" mt-3"><small>© 2021. All Rights Reserved.</small></p>
+              </div>
+              <div class="col-lg-4 col-xs-12 location pl-5">
+                    <h4 class="mt-lg-0 mt-sm-4">Contact Info</h4>
+                    <p class="mb-0"><i class="fa fa-envelope-o mr-3 icons-2"></i>Gebeta@gmail.com</p>
+                    <p class="mb-0"><i class="fa fa-phone mr-3 icons-2"></i>(+251) 984-2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        
+    </form>
+
+    <!-- Bootsrap 4 js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
